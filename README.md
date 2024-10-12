@@ -72,3 +72,28 @@ El script `delete_records.py` se utiliza para eliminar registros específicos de
 5. **Uso en Mantenimiento**: Este script es útil para mantener la integridad y relevancia de los datos en el topic, permitiendo la eliminación de información obsoleta o incorrecta.
 
 El script de eliminación de registros es una herramienta fundamental para gestionar los datos en Kafka, asegurando que solo se conserven los mensajes relevantes y útiles para el análisis y procesamiento posterior.
+# Proyecto de Procesamiento de Datos en Tiempo Real con Apache Spark y Kafka
+
+Este proyecto tiene como objetivo implementar un sistema de procesamiento de datos en tiempo real utilizando Apache Spark y Kafka. A través de la generación, consumo y eliminación de registros, se busca demostrar cómo estas tecnologías pueden trabajar juntas para gestionar flujos de datos continuos de manera eficiente y efectiva.
+
+## Componentes del Proyecto
+
+1. **Generador de Datos (`generator.py`)**:
+   - Simula la llegada de datos en tiempo real a un topic de Kafka, generando mensajes aleatorios y enviándolos periódicamente. Esto permite crear un flujo constante de información que se puede consumir para análisis.
+
+2. **Consumer de Spark (`consumer_spark.py`)**:
+   - Se conecta al topic de Kafka para consumir los datos generados. Utiliza un contexto de streaming de Spark para procesar estos datos en micro-batches, realizando operaciones como conteo de eventos y cálculos estadísticos. Los resultados se visualizan en la consola, ofreciendo una perspectiva en tiempo real sobre el flujo de datos.
+
+3. **Eliminación de Registros (`delete_records.py`)**:
+   - Permite eliminar registros específicos de un topic en Kafka. Este script asegura que la información obsoleta o no deseada sea removida, manteniendo la integridad y relevancia de los datos almacenados.
+
+## Objetivos del Proyecto
+
+- **Demostrar el uso de Apache Kafka** como una plataforma de mensajería que permite el procesamiento en tiempo real de flujos de datos.
+- **Implementar Apache Spark** para el análisis y procesamiento eficiente de los datos consumidos de Kafka.
+- **Gestionar registros en Kafka**, incluyendo la generación, consumo y eliminación de mensajes, facilitando un manejo efectivo de la información.
+
+## Conclusión
+
+Este proyecto ejemplifica la integración de tecnologías modernas para el procesamiento de datos en tiempo real, brindando una solución robusta y escalable que puede ser aplicada en diversas industrias y aplicaciones donde la gestión eficiente de datos es crucial.
+
