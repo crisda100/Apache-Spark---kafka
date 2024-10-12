@@ -13,11 +13,14 @@ Este proyecto implementa un sistema de procesamiento de datos en tiempo real uti
 
 ## Instrucciones para la Ejecución
 
-### 1. Configuración del Entorno
+## Requisitos
 
-1. **Instalar Java**: Asegúrate de que Java esté instalado. Puedes verificar la instalación ejecutando:
-   ```bash
-   java -version
+- Java 8 o superior
+- Apache Kafka
+- Apache Spark
+- Python 3.x
+- Librerías de Python necesarias (por ejemplo, `pyspark , kafka-python`)
+- 
 #  Generador de Datos generator.py
 El script `generator.py` tiene como objetivo simular la llegada de datos en tiempo real al topic de Kafka. A continuación se describe su funcionalidad principal:
 
